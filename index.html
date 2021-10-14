@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Components Preview</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+    <style>
+        .pages-list {
+            max-width: 420px;
+            margin: 50px auto;
+        }
+
+        .pages-list li {
+            position: relative;
+        }
+
+        .pages-list li a {
+            display: inline-block;
+            width: 100%;
+            color: #333;
+            padding: 10px 30px;
+            border-radius: 5px;
+        }
+
+        .pages-list li a:hover {
+            background-color: #f7f7f7;
+            color: #9128a0;
+        }
+
+        .m::after {
+            position: absolute;
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #9128a0;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    </style>
+    <div class="wrapper">
+        <ul class="pages-list">
+            <li class="m"><a href="html-pages/home.html">Главная</a></li>
+            <li class="m"><a href="html-pages/category.html">Каталог</a></li>
+            <li class="m"><a href="html-pages/company.html">Страница компании</a></li>
+            <li class="m"><a href="html-pages/search.html">Поиск</a></li>
+            <li class="m"><a href="html-pages/about.html">О компании</a></li>
+            <li class="m"><a href="html-pages/offer.html">Оферта</a></li>
+            <li class="m"><a href="html-pages/signin.html">Вход</a></li>
+            <li class="m"><a href="html-pages/signup.html">Регистрация</a></li>
+            <li class="m"><a href="html-pages/checkout-cart.html">Корзина</a></li>
+            <li class="m"><a href="html-pages/checkout-address.html">Оформление заказа > Адрес</a></li>
+            <li class="m"><a href="html-pages/checkout-delivery.html">Оформление заказа > Доставка</a></li>
+            <li class="m"><a href="html-pages/checkout-payment.html">Оформление заказа > Оплата</a></li>
+            <li class="m"><a href="html-pages/checkout-finishing.html">Оформление заказа > Подтверждение</a></li>
+            <li class="m"><a href="html-pages/cabinet-profile.html">Кабинет > Профиль</a></li>
+            <li class="m"><a href="html-pages/cabinet-my-orders.html">Кабинет > Мои заказы</a></li>
+            <li class="m"><a href="html-pages/cabinet-favorite.html">Кабинет > Избарнное</a></li>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

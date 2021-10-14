@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Components Preview</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="reviews-form">
+                    <div class="reviews-form__wrap">
+                        <form action="">
+                            <label class="form__input">
+                                <input type="name" placeholder="Имя">
+                                <span class="input-error-message">нехватает @</span>
+                            </label>
+                            <label class="form__input">
+                                <input type="email" placeholder="E-mail">
+                                <span class="input-error-message">нехватает @</span>
+                            </label>
+                            <label class="form__textarea">
+                                <textarea placeholder="Отзыв"></textarea>
+                                <span class="input-error-message">Недопустимые слова</span>
+                            </label>
+                            <div class="rating-group">
+                                <span class="rating__label">Ваша отметка</span>
+                                <div class="rating">
+                                    <label>
+                                        <input type="radio" name="rating">
+                                        <span class="rating__stars"></span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="rating">
+                                        <span class="rating__stars"></span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="rating">
+                                        <span class="rating__stars"></span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="rating">
+                                        <span class="rating__stars"></span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="rating">
+                                        <span class="rating__stars"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="button button_default button_input">
+                                <input type="submit" value="Написать отзыв">
+                            </div>
+                        </form>
+                        <span class="reviews-form__info">Каждый отзыв проверяется</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

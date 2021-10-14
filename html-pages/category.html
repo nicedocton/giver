@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Components Preview</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <button class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="header__mobile">
+            <ul class="header__mobile-list">
+                <li><a href="#">Профиль</a></li>
+                <li><a href="#">Мои заказы</a></li>
+                <li><a href="#">Избранное</a></li>
+                <li><a href="#">Частые вопросы</a></li>
+                <li><a href="#">Стать партнером</a></li>
+                <li><a href="#">Выйти</a></li>
+            </ul>
+        </div>
+        <a href="#" class="header__logo"><img src="../images/logo-giver.svg" class="logo-image" height="50px"></a>
+        <a href="#" class="button button_outline button_become-a-partner">Стать партнером</a>
+        <a href="#" class="link link_header-faq">Частые вопросы</a>
+        <div class="header__right-nav">
+            <div class="cart-popup">
+                <a href="#" class="cart-popup__button">
+                    <div class="cart-icon"></div>
+                    <span class="cart-empty">Пусто</span>
+                    <span class="cart-items-count">2 товара</span>
+                    <span class="cart-cta-text">Перейти</span>
+                </a>
+                <div class="cart-popup__content">
+                    <div class="cart-popup__mobile-head">
+                        <h3>Корзина</h3>
+                        <button type="button" class="close-cart-popup"><i class="icon icon_cancel"></i></button>
+                    </div>
+                    <div class="cart-popup__list">
+                        <div class="popup-item">
+                            <button class="popup-item__remove"><i class="icon icon_cancel"></i></button>
+                            <div class="popup-item__cover">
+                                <img src="../images/content/bitmap-copy@2x.jpg" class="popup-item__cover-image" alt="">
+                            </div>
+                            <h3 class="popup-item__title">Alfa Education</h3>
+                            <span class="popup-item__category">Повышение квалификации</span>
+                        </div>
+                        <div class="popup-item">
+                            <button class="popup-item__remove"><i class="icon icon_cancel"></i></button>
+                            <div class="popup-item__cover">
+                                <img src="../images/content/bitmap-copy@2x.jpg" class="popup-item__cover-image" alt="">
+                            </div>
+                            <h3 class="popup-item__title">Пуфик</h3>
+                            <span class="popup-item__category">Организация праздников</span>
+                        </div>
+                        <div class="popup-item">
+                            <button class="popup-item__remove"><i class="icon icon_cancel"></i></button>
+                            <div class="popup-item__cover">
+                                <img src="../images/content/bitmap-copy@2x.jpg" class="popup-item__cover-image" alt="">
+                            </div>
+                            <h3 class="popup-item__title">Пуфик</h3>
+                            <span class="popup-item__category">Организация праздников</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown dropdown_user">
+                <a href="#" class="dropdown__button"><i class="icon icon_user"></i><span>Тимур</span><i class="icon icon_chevron_down"></i></a>
+                <div class="dropdown__menu">
+                    <ul class="dropdown__menu-list">
+                        <li><a href="#">Профиль</a></li>
+                        <li><a href="#">Мои заказы</a></li>
+                        <li><a href="#">Избранное</a></li>
+                        <li><a href="#">Выйти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+
+        <section class="searchbar searchbar_mini">
+            <div class="searchbar__wrap">
+                <div class="searchbar__left">
+                    <h2 class="searchbar__title">Безпроигрышный<br>подарок</h2>
+                    <p class="searchbar__subtitle">Сертификаты для всех<br>и на все случаи жизни</p>
+                </div>
+                <div class="searchbar__right">
+                    <form action="" class="searchbar__form">
+                        <label class="form__input form__input_search">
+                            <input type="email" placeholder="Например: Посещение спа">
+                            <input type="submit" value="" class="submit-search">
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="item-banner__wrap">
+            <section class="item-banner item-banner_md">
+                <a href="#">
+                    <div class="item-banner__cover">
+                        <div class="item-banner__cover-image" style="background-image: url(../images/content/bitmap-copy-12@2x.jpg)"></div>
+                    </div>
+                    <span class="item-banner__adv-helper">Реклама</span>
+                    <!-- <div class="item-banner__badge item-banner__badge_new">новинка</div>
+                    <div class="item-banner__badge item-banner__badge_best-seller">хит продаж</div>
+                    <div class="item-banner__badge item-banner__badge_users-choice">выбор покупателей</div>-->
+                    <div class="item-banner__badge item-banner__badge_hot">горячее предложение</div>
+                    <div class="item-banner__content">
+                        <div class="item-banner__rating">4.2</div>
+                        <h2 class="item-banner__title">Дикая Орхидея</h2>
+                        <span class="item-banner__category">Контактные массажи, расслабляющие бассейны</span>
+                    </div>
+                </a>
+            </section>
+        </div>
+
+        <div class="megamenu megamenu_open">
+            <ul class="megamenu__list">
+                <li class="mm-group">
+                    <a href="#food">
+                        <div class="mm-group__icon-box">
+                            <i class="icon icon_food"></i>
+                            <span>Еда</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li><a href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="mm-group">
+                    <a href="#healthy_life">
+                        <div class="mm-group__icon-box">
+                            <i class="icon icon_healthy_life"></i>
+                            <span>Здоровый образ жизни</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li><a href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="mm-group">
+                    <a href="#sport">
+                        <div class="mm-group__icon-box">
+                            <i class="icon icon_sport"></i>
+                            <span>Активный отдых</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li><a href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="mm-group mm-group_open">
+                    <a href="#beauty">
+                        <div class="mm-group__icon-box">
+                            <i class="icon icon_beauty"></i>
+                            <span>Красота и здоровье</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li><a href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="mm-group">
+                    <a href="#entertainment">
+                        <div class="mm-group__icon-box">
+                            <i class="icon icon_entertainment"></i>
+                            <span>Развлечения</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li><a href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="mm-group">
+                    <a href="#shopping">
+                        <div class="mm-group__icon-box">
+                            <i class="icon icon_shopping"></i>
+                            <span>Шоппинг</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li><a href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="mm-group">
+                    <a href="#book">
+                        <div class="mm-group__icon-box">
+                            <i class="icon icon_book"></i>
+                            <span>Обучение, мастер классы</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li><a href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="mm-group">
+                    <a href="#child">
+                        <div class="mm-group__icon-box">
+                            <div class="mm-badge">new</div>
+                            <i class="icon icon_child"></i>
+                            <span>Дети</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li><a href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="headline headline_category-page">
+            <h1 class="headline__title">Массаж</h1>
+            <div class="headline__items-count"><span>124</span>товара</div>
+            <div class="dropdowns-group">
+                <div class="dropdown dropdown_md">
+                    <a href="#" class="dropdown__button"><span>Пол</span><i class="icon icon_chevron_down"></i></a>
+                    <div class="dropdown__menu">
+                        <ul class="dropdown__menu-list">
+                            <li><a href="#">Мужской</a></li>
+                            <li><a href="#">Женский</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown dropdown_md">
+                    <a href="#" class="dropdown__button"><span>Возраст</span><i class="icon icon_chevron_down"></i></a>
+                    <div class="dropdown__menu">
+                        <ul class="dropdown__menu-list">
+                            <li><a href="#">1 - 6</a></li>
+                            <li><a href="#">7 - 12</a></li>
+                            <li><a href="#">13 - 17</a></li>
+                            <li><a href="#">18 - 25</a></li>
+                            <li><a href="#">25 - 40</a></li>
+                            <li><a href="#">40 - 80</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown dropdown_md">
+                    <a href="#" class="dropdown__button"><span>Рекомендуемые</span><i class="icon icon_chevron_down"></i></a>
+                    <div class="dropdown__menu">
+                        <ul class="dropdown__menu-list">
+                            <li><a href="#">За неделю</a></li>
+                            <li><a href="#">Популярные</a></li>
+                            <li><a href="#">Дешевые</a></li>
+                            <li><a href="#">Дорогие</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <label class="form__radio form__radio_sm">
+                    <input type="radio" name="radio">
+                    <div class="radio-icon"></div>
+                    <span class="radio-label">Новинки</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="category-items">
+            <div class="category-items__wrap">
+                <div class="card card_lg">
+                    <a href="#">
+                        <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                        <!-- <div class="card__badge card__badge_new">новинка</div>
+                        <div class="card__badge card__badge_best-seller">хит продаж</div>
+                        <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                        <div class="card__badge card__badge_hot">горячее предложение</div>
+                        <div class="card__cover">
+                            <img class="card__cover-image" src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                        </div>
+                        <div class="card__rating">4.2</div>
+                        <h3 class="card__title">Alfa Education</h3>
+                        <span class="card__category">Повышение квалификации</span>
+                        <p class="card__description"></p>
+                    </a>
+                </div>
+                <div class="card card_lg">
+                    <a href="#">
+                        <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                        <!-- <div class="card__badge card__badge_new">новинка</div>
+                        <div class="card__badge card__badge_best-seller">хит продаж</div>
+                        <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                        <div class="card__badge card__badge_hot">горячее предложение</div>
+                        <div class="card__cover">
+                            <img class="card__cover-image" src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                        </div>
+                        <div class="card__rating">4.2</div>
+                        <h3 class="card__title">Alfa Education</h3>
+                        <span class="card__category">Повышение квалификации</span>
+                        <p class="card__description"></p>
+                    </a>
+                </div>
+                <div class="card card_lg">
+                    <a href="#">
+                        <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                        <!-- <div class="card__badge card__badge_new">новинка</div>
+                        <div class="card__badge card__badge_best-seller">хит продаж</div>
+                        <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                        <div class="card__badge card__badge_hot">горячее предложение</div>
+                        <div class="card__cover">
+                            <img class="card__cover-image" src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                        </div>
+                        <div class="card__rating">4.2</div>
+                        <h3 class="card__title">Alfa Education</h3>
+                        <span class="card__category">Повышение квалификации</span>
+                        <p class="card__description"></p>
+                    </a>
+                </div>
+                <div class="card card_lg">
+                    <a href="#">
+                        <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                        <!-- <div class="card__badge card__badge_new">новинка</div>
+                        <div class="card__badge card__badge_best-seller">хит продаж</div>
+                        <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                        <div class="card__badge card__badge_hot">горячее предложение</div>
+                        <div class="card__cover">
+                            <img class="card__cover-image" src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                        </div>
+                        <div class="card__rating">4.2</div>
+                        <h3 class="card__title">Alfa Education</h3>
+                        <span class="card__category">Повышение квалификации</span>
+                        <p class="card__description"></p>
+                    </a>
+                </div>
+                <div class="card card_lg">
+                    <a href="#">
+                        <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                        <!-- <div class="card__badge card__badge_new">новинка</div>
+                        <div class="card__badge card__badge_best-seller">хит продаж</div>
+                        <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                        <div class="card__badge card__badge_hot">горячее предложение</div>
+                        <div class="card__cover">
+                            <img class="card__cover-image" src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                        </div>
+                        <div class="card__rating">4.2</div>
+                        <h3 class="card__title">Alfa Education</h3>
+                        <span class="card__category">Повышение квалификации</span>
+                        <p class="card__description"></p>
+                    </a>
+                </div>
+                <div class="card card_lg">
+                    <a href="#">
+                        <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                        <!-- <div class="card__badge card__badge_new">новинка</div>
+                        <div class="card__badge card__badge_best-seller">хит продаж</div>
+                        <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                        <div class="card__badge card__badge_hot">горячее предложение</div>
+                        <div class="card__cover">
+                            <img class="card__cover-image" src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                        </div>
+                        <div class="card__rating">4.2</div>
+                        <h3 class="card__title">Alfa Education</h3>
+                        <span class="card__category">Повышение квалификации</span>
+                        <p class="card__description"></p>
+                    </a>
+                </div>
+                <div class="card card_lg">
+                    <a href="#">
+                        <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                        <!-- <div class="card__badge card__badge_new">новинка</div>
+                        <div class="card__badge card__badge_best-seller">хит продаж</div>
+                        <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                        <div class="card__badge card__badge_hot">горячее предложение</div>
+                        <div class="card__cover">
+                            <img class="card__cover-image" src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                        </div>
+                        <div class="card__rating">4.2</div>
+                        <h3 class="card__title">Alfa Education</h3>
+                        <span class="card__category">Повышение квалификации</span>
+                        <p class="card__description"></p>
+                    </a>
+                </div>
+                <div class="card card_lg">
+                    <a href="#">
+                        <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                        <!-- <div class="card__badge card__badge_new">новинка</div>
+                        <div class="card__badge card__badge_best-seller">хит продаж</div>
+                        <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                        <div class="card__badge card__badge_hot">горячее предложение</div>
+                        <div class="card__cover">
+                            <img class="card__cover-image" src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                        </div>
+                        <div class="card__rating">4.2</div>
+                        <h3 class="card__title">Alfa Education</h3>
+                        <span class="card__category">Повышение квалификации</span>
+                        <p class="card__description"></p>
+                    </a>
+                </div>
+                <div class="card card_lg">
+                    <a href="#">
+                        <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                        <!-- <div class="card__badge card__badge_new">новинка</div>
+                        <div class="card__badge card__badge_best-seller">хит продаж</div>
+                        <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                        <div class="card__badge card__badge_hot">горячее предложение</div>
+                        <div class="card__cover">
+                            <img class="card__cover-image" src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                        </div>
+                        <div class="card__rating">4.2</div>
+                        <h3 class="card__title">Alfa Education</h3>
+                        <span class="card__category">Повышение квалификации</span>
+                        <p class="card__description"></p>
+                    </a>
+                </div>
+                <div class="card card_lg">
+                    <a href="#">
+                        <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                        <!-- <div class="card__badge card__badge_new">новинка</div>
+                        <div class="card__badge card__badge_best-seller">хит продаж</div>
+                        <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                        <div class="card__badge card__badge_hot">горячее предложение</div>
+                        <div class="card__cover">
+                            <img class="card__cover-image" src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                        </div>
+                        <div class="card__rating">4.2</div>
+                        <h3 class="card__title">Alfa Education</h3>
+                        <span class="card__category">Повышение квалификации</span>
+                        <p class="card__description"></p>
+                    </a>
+                </div>
+                <div class="card card_lg">
+                    <a href="#">
+                        <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                        <!-- <div class="card__badge card__badge_new">новинка</div>
+                        <div class="card__badge card__badge_best-seller">хит продаж</div>
+                        <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                        <div class="card__badge card__badge_hot">горячее предложение</div>
+                        <div class="card__cover">
+                            <img class="card__cover-image" src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                        </div>
+                        <div class="card__rating">4.2</div>
+                        <h3 class="card__title">Alfa Education</h3>
+                        <span class="card__category">Повышение квалификации</span>
+                        <p class="card__description"></p>
+                    </a>
+                </div>
+                <div class="card card_lg">
+                    <a href="#">
+                        <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                        <!-- <div class="card__badge card__badge_new">новинка</div>
+                        <div class="card__badge card__badge_best-seller">хит продаж</div>
+                        <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                        <div class="card__badge card__badge_hot">горячее предложение</div>
+                        <div class="card__cover">
+                            <img class="card__cover-image" src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                        </div>
+                        <div class="card__rating">4.2</div>
+                        <h3 class="card__title">Alfa Education</h3>
+                        <span class="card__category">Повышение квалификации</span>
+                        <p class="card__description"></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <ul class="pagination pagination_category-page">
+            <li class="pagination__num pagination__prew"><a href="#"><i class="icon icon_chevron_left"></i></a></li>
+            <li class="pagination__num"><a href="#">1</a></li>
+            <li class="pagination__num"><a href="#">2</a></li>
+            <li class="pagination__num pagination__num_active"><a href="#">3</a></li>
+            <li class="pagination__num"><a href="#">4</a></li>
+            <li class="pagination__num"><a href="#">...</a></li>
+            <li class="pagination__num"><a href="#">15</a></li>
+            <li class="pagination__num"><a href="#">16</a></li>
+            <li class="pagination__num"><a href="#">17</a></li>
+            <li class="pagination__num pagination__next"><a href="#"><i class="icon icon_chevron_right"></i></a></li>
+        </ul>
+
+        <section class="slider">
+            <div class="slider__wrap">
+                <div class="slider__headline">
+                    <h2 class="title">Популярное</h2>
+                    <a href="#" class="view-all">Смотреть все</a>
+                </div>
+                <div class="slider__items slick">
+                    <a href="#">
+                        <div class="card card_lg">
+                            <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                            <!-- <div class="card__badge card__badge_new">новинка</div>
+                            <div class="card__badge card__badge_best-seller">хит продаж</div>
+                            <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                            <div class="card__badge card__badge_hot">горячее предложение</div>
+                            <div class="card__cover">
+                                <img class="card__cover-image" src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                            </div>
+                            <div class="card__rating">4.2</div>
+                            <h3 class="card__title">Alfa Education</h3>
+                            <span class="card__category">Повышение квалификации</span>
+                            <p class="card__description"></p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card_lg">
+                            <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                            <!-- <div class="card__badge card__badge_new">новинка</div>
+                            <div class="card__badge card__badge_best-seller">хит продаж</div>
+                            <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                            <div class="card__badge card__badge_hot">горячее предложение</div>
+                            <div class="card__cover">
+                                <img class="card__cover-image" src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                            </div>
+                            <div class="card__rating">4.2</div>
+                            <h3 class="card__title">Alfa Education</h3>
+                            <span class="card__category">Повышение квалификации</span>
+                            <p class="card__description"></p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card_lg">
+                            <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                            <!-- <div class="card__badge card__badge_new">новинка</div>
+                            <div class="card__badge card__badge_best-seller">хит продаж</div>
+                            <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                            <div class="card__badge card__badge_hot">горячее предложение</div>
+                            <div class="card__cover">
+                                <img class="card__cover-image" src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                            </div>
+                            <div class="card__rating">4.2</div>
+                            <h3 class="card__title">Alfa Education</h3>
+                            <span class="card__category">Повышение квалификации</span>
+                            <p class="card__description"></p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card_lg">
+                            <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                            <!-- <div class="card__badge card__badge_new">новинка</div>
+                            <div class="card__badge card__badge_best-seller">хит продаж</div>
+                            <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                            <div class="card__badge card__badge_hot">горячее предложение</div>
+                            <div class="card__cover">
+                                <img class="card__cover-image" src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                            </div>
+                            <div class="card__rating">4.2</div>
+                            <h3 class="card__title">Alfa Education</h3>
+                            <span class="card__category">Повышение квалификации</span>
+                            <p class="card__description"></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider">
+            <div class="slider__wrap">
+                <div class="slider__headline">
+                    <h2 class="title">Популярное</h2>
+                    <a href="#" class="view-all">Смотреть все</a>
+                </div>
+                <div class="slider__items slick">
+                    <a href="#">
+                        <div class="card card_lg">
+                            <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                            <!-- <div class="card__badge card__badge_new">новинка</div>
+                            <div class="card__badge card__badge_best-seller">хит продаж</div>
+                            <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                            <div class="card__badge card__badge_hot">горячее предложение</div>
+                            <div class="card__cover">
+                                <img class="card__cover-image" src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                            </div>
+                            <div class="card__rating">4.2</div>
+                            <h3 class="card__title">Alfa Education</h3>
+                            <span class="card__category">Повышение квалификации</span>
+                            <p class="card__description"></p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card_lg">
+                            <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                            <!-- <div class="card__badge card__badge_new">новинка</div>
+                            <div class="card__badge card__badge_best-seller">хит продаж</div>
+                            <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                            <div class="card__badge card__badge_hot">горячее предложение</div>
+                            <div class="card__cover">
+                                <img class="card__cover-image" src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                            </div>
+                            <div class="card__rating">4.2</div>
+                            <h3 class="card__title">Alfa Education</h3>
+                            <span class="card__category">Повышение квалификации</span>
+                            <p class="card__description"></p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card_lg">
+                            <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                            <!-- <div class="card__badge card__badge_new">новинка</div>
+                            <div class="card__badge card__badge_best-seller">хит продаж</div>
+                            <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                            <div class="card__badge card__badge_hot">горячее предложение</div>
+                            <div class="card__cover">
+                                <img class="card__cover-image" src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                            </div>
+                            <div class="card__rating">4.2</div>
+                            <h3 class="card__title">Alfa Education</h3>
+                            <span class="card__category">Повышение квалификации</span>
+                            <p class="card__description"></p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card card_lg">
+                            <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                            <!-- <div class="card__badge card__badge_new">новинка</div>
+                            <div class="card__badge card__badge_best-seller">хит продаж</div>
+                            <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                            <div class="card__badge card__badge_hot">горячее предложение</div>
+                            <div class="card__cover">
+                                <img class="card__cover-image" src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                            </div>
+                            <div class="card__rating">4.2</div>
+                            <h3 class="card__title">Alfa Education</h3>
+                            <span class="card__category">Повышение квалификации</span>
+                            <p class="card__description"></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cta cta_category">
+            <div class="cta__wrap">
+                <div class="cta__left">
+                    <h2 class="cta__title">Хотите стать партнером?</h2>
+                    <p class="cta__subtitle">Наша команда с радостью расскажет вам обо всех преимуществах, которые вы получите, став нашим партнером!</p>
+                </div>
+                <div class="cta__right">
+                    <a class="button button_default">Стать партнером</a>
+                    <p class="cta__instruction">Заполните форму или позвоните нам и наш специалист подробно все расскажет</p>
+                    <span class="cta__phone">998 90 555 22 11</span>
+                </div>
+            </div>
+        </section>
+    
+    </section>
+
+    <footer class="footer">
+        <div class="footer__wrap">
+            <div class="footer__col-3">
+                <a href="#" class="footer__logo"><img src="../images/logo-giver.svg" class="logo-image"></a>
+                <span class="copyright-date">© 2018-2020 Giver</span>
+                <ul class="ligal-links">
+                    <li><a href="#"> Обработка персональных данных</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li><a href="#">Публичная оферта</a></li>
+                </ul>
+            </div>
+            <div class="footer__col-5">
+                <ul class="footer__links">
+                    <li><a href="#">Компания</a></li>
+                    <li><a href="#">Как работает Giver</a></li>
+                    <li><a href="#">Вопросы и ответы</a></li>
+                </ul>
+                <ul class="footer__links">
+                    <li><a href="#">Оплата и возврат</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Партнерам</a></li>
+                </ul>
+            </div>
+            <div class="footer__col-3">
+                <div class="contact-info">
+                    <a href="#" class="button button_outline"><i class="icon icon_phone"></i><span>связаться с нами</span></a>
+                    <span class="contact-info__hotline-title">Горячая линия для пользователей:</span>
+                    <a href="tel:#" class="contact-info__hotline-phone">998 90 555 22 11</a>
+                    <a href="#" class="contact-info__email">info@giver.uz</a>
+                </div>
+            </div>
+            <div class="footer__col-1">
+                <ul class="socials">
+                    <li><a href="#"><i class="icon icon_tw"></i></a></li>
+                    <li><a href="#"><i class="icon icon_fb_boxed"></i></a></li>
+                    <li><a href="#"><i class="icon icon_inst"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-info">Все права защищены. Подарочные сертификаты по всему Узбекистану!</div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="../js/jquery.nice-select.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

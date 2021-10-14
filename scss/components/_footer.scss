@@ -1,0 +1,347 @@
+.footer {
+    margin-top: 100px;
+    width: 100%;
+    border-top: 1px solid $very-light-pink;
+    background-color: $white;
+    padding-top: 30px;
+    @extend .wrapper;
+
+    &__wrap {
+        @extend .row;
+    }
+
+    &__col-1,
+    &__col-3,
+    &__col-5 {
+        @extend .default-col-padding;
+    }
+
+    &__col-1 {
+        @extend .col-md-1;
+    }
+
+    &__col-3 {
+        @extend .col-md-3;
+    }
+
+    &__col-5 {
+        @extend .col-md-5;
+        @extend .col-8;
+        @extend .default-col-padding;
+    }
+    
+    &__links {
+        display: inline-block;
+        margin: 6px 50px 0 50px;
+
+        li {
+
+            a {
+                display: inline-block;
+                font-size: 14px;
+                color: $black;
+                margin-bottom: 22px;
+
+                &:hover {
+                    color: $warm-purple;
+                }
+            }
+        }
+    }
+}
+
+.ligal-links {
+    margin-top: 20px;
+
+    li {
+
+        a {
+            font-size: 12px;
+            color: $brown-grey;
+            line-height: 1.67;
+
+            &:hover {
+                color: $warm-purple;
+            }
+        }
+    }
+}
+
+.contact-info {
+    text-align: right;
+    float: left;
+
+    &__hotline-title {
+        width: 100%;
+        margin-top: 18px;
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+
+    &__hotline-phone,
+    &__email {
+        color: $black;
+        display: inline-block;
+        display: block;
+
+        &:hover {
+            color: $warm-purple;
+        }
+    }
+
+    &__hotline-phone {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    &__email {
+        font-size: 14px;
+    }
+}
+
+.copyright {
+
+    &-date {
+        width: 100%;
+        margin-top: 28px;
+        font-size: 12px;
+    }
+
+    &-info {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 12px;
+        color: $brown-grey;
+        border-top: 1px solid $very-light-pink;
+        padding: 8px 0 17px 0;
+    }
+}
+
+.socials {
+    float: right;
+
+    li {
+        margin-bottom: 23px;
+        line-height: 1;
+
+        a {
+            color: $sunflower-yellow;
+            font-size: 16px;
+            line-height: 1;
+
+            &:hover {
+                color: $warm-purple;
+            }
+        }
+    }
+}
+
+@media (max-width: 1180px) {
+
+    .footer {
+        margin-top: 40px;
+        border-top: none;
+
+        &__links {
+            margin: 6px 20px 0 20px;
+        }
+    }
+}
+
+@media (max-width: 820px) {
+
+    .footer {
+        margin-top: 0;
+        padding: 30px;
+        padding-bottom: 0;
+
+        &__logo {
+
+            .logo-image {
+                height: 45px;
+            }
+        }
+
+        &__links {
+            margin: 76px 30px 0 30px;
+        }
+
+        .button_outline {
+            float: left;
+            margin-top: 4px;
+        }
+
+        &__col-3 {
+            width: 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+
+            &:first-child {
+                width: 33.333%;
+                flex: 0 0 33.333%;
+                max-width: 33.333%;
+            }
+        }
+
+        &__col-5 {
+            width: 66.6666666667%;
+            flex: 0 0 66.6666666667%;
+            max-width: 66.6666666667%;
+        }
+
+        &__col-1 {
+            width: 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    .socials {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+
+        li {
+            display: inline-block;
+            margin-bottom: 0;
+            margin-right: 15px;
+
+        }
+    }
+
+    .contact-info {
+        text-align: left;
+        float: none;
+        margin-top: 20px;
+        padding-top: 30px;
+        border-top: 1px solid $very-light-pink;
+
+        &__hotline-title {
+            width: 40%;
+            margin: 0;
+            margin-left: 30px;
+        }
+
+        &__hotline-phone {
+            display: inline-block;
+            margin-bottom: 0;
+            margin-left: 30px;
+        }
+
+        &__email {
+            display: inline-block;
+            float: right;
+        }
+    }
+
+    .copyright-info {
+        padding: 8px 0;
+    }
+}
+
+
+@media (max-width: 580px) {
+    .footer {
+
+        &__links {
+            margin: 76px 10px 0 10px;
+        }
+    }
+
+    .contact-info {
+
+        &__hotline-phone,
+        &__hotline-title {
+            margin: 0;
+            float: right;
+            text-align: right;
+            width: auto;
+        }
+
+        &__email {
+            width: 100%;
+            text-align: right;        
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .footer {
+        padding: 15px;
+        text-align: center;
+        padding-bottom: 0;
+
+        .button {
+            float: none;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        &__col-1,
+        &__col-3,
+        &__col-5 {
+            width: 100%!important;
+            flex: 0 0 100%!important;
+            max-width: 100%!important;
+        }
+
+        &__links {
+            margin: 0;
+            width: 100%;
+
+            li {
+                display: inline-block;
+                margin-right: 15px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    margin-bottom: 10px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .copyright {
+
+        &-date {
+            margin-top: 18px;
+        }
+    }
+
+    .ligal-links {
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+        li {
+            display: inline-block;
+            margin-right: 15px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .contact-info {
+        text-align: center;
+
+        &__hotline-title,
+        &__email {
+            margin: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        &__hotline-phone {
+            margin: 0;
+            width: 100%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    }
+}

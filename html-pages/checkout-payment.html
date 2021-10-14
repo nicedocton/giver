@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Components Preview</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <button class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="header__mobile">
+            <ul class="header__mobile-list">
+                <li><a href="#">Профиль</a></li>
+                <li><a href="#">Мои заказы</a></li>
+                <li><a href="#">Избранное</a></li>
+                <li><a href="#">Частые вопросы</a></li>
+                <li><a href="#">Стать партнером</a></li>
+                <li><a href="#">Выйти</a></li>
+            </ul>
+        </div>
+        <a href="#" class="header__logo"><img src="../images/logo-giver.svg" class="logo-image" height="50px"></a>
+        <a href="#" class="button button_outline button_become-a-partner">Стать партнером</a>
+        <a href="#" class="link link_header-faq">Частые вопросы</a>
+        <div class="header__right-nav">
+            <div class="cart-popup">
+                <a href="#" class="cart-popup__button">
+                    <div class="cart-icon"></div>
+                    <span class="cart-empty">Пусто</span>
+                    <span class="cart-items-count">2 товара</span>
+                    <span class="cart-cta-text">Перейти</span>
+                </a>
+                <div class="cart-popup__content">
+                    <div class="cart-popup__mobile-head">
+                        <h3>Корзина</h3>
+                        <button type="button" class="close-cart-popup"><i class="icon icon_cancel"></i></button>
+                    </div>
+                    <div class="cart-popup__list">
+                        <div class="popup-item">
+                            <button class="popup-item__remove"><i class="icon icon_cancel"></i></button>
+                            <div class="popup-item__cover">
+                                <img src="../images/content/bitmap-copy@2x.jpg" class="popup-item__cover-image" alt="">
+                            </div>
+                            <h3 class="popup-item__title">Alfa Education</h3>
+                            <span class="popup-item__category">Повышение квалификации</span>
+                        </div>
+                        <div class="popup-item">
+                            <button class="popup-item__remove"><i class="icon icon_cancel"></i></button>
+                            <div class="popup-item__cover">
+                                <img src="../images/content/bitmap-copy@2x.jpg" class="popup-item__cover-image" alt="">
+                            </div>
+                            <h3 class="popup-item__title">Пуфик</h3>
+                            <span class="popup-item__category">Организация праздников</span>
+                        </div>
+                        <div class="popup-item">
+                            <button class="popup-item__remove"><i class="icon icon_cancel"></i></button>
+                            <div class="popup-item__cover">
+                                <img src="../images/content/bitmap-copy@2x.jpg" class="popup-item__cover-image" alt="">
+                            </div>
+                            <h3 class="popup-item__title">Пуфик</h3>
+                            <span class="popup-item__category">Организация праздников</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown dropdown_user">
+                <a href="#" class="dropdown__button"><i class="icon icon_user"></i><span>Тимур</span><i class="icon icon_chevron_down"></i></a>
+                <div class="dropdown__menu">
+                    <ul class="dropdown__menu-list">
+                        <li><a href="#">Профиль</a></li>
+                        <li><a href="#">Мои заказы</a></li>
+                        <li><a href="#">Избранное</a></li>
+                        <li><a href="#">Выйти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+
+        <section class="searchbar searchbar_mini">
+            <div class="searchbar__wrap">
+                <div class="searchbar__left">
+                    <h2 class="searchbar__title">Безпроигрышный<br>подарок</h2>
+                    <p class="searchbar__subtitle">Сертификаты для всех<br>и на все случаи жизни</p>
+                </div>
+                <div class="searchbar__right">
+                    <form action="" class="searchbar__form">
+                        <label class="form__input form__input_search">
+                            <input type="email" placeholder="Например: Посещение спа">
+                            <input type="submit" value="" class="submit-search">
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="megamenu">
+            <ul class="megamenu__list">
+                <li class="mm-group">
+                    <a href="#food">
+                        <div class="mm-group__icon-box">
+                            <i class="icon icon_food"></i>
+                            <span>Еда</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li><a href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="mm-group">
+                    <a href="#healthy_life">
+                        <div class="mm-group__icon-box">
+                            <i class="icon icon_healthy_life"></i>
+                            <span>Здоровый образ жизни</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="mm-group">
+                    <a href="#sport">
+                        <div class="mm-group__icon-box">
+                            <i class="icon icon_sport"></i>
+                            <span>Активный отдых</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li><a href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="mm-group">
+                    <a href="#beauty">
+                        <div class="mm-group__icon-box">
+                            <i class="icon icon_beauty"></i>
+                            <span>Красота и здоровье</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li><a href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="mm-group">
+                    <a href="#entertainment">
+                        <div class="mm-group__icon-box">
+                            <i class="icon icon_entertainment"></i>
+                            <span>Развлечения</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li><a href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="mm-group">
+                    <a href="#shopping">
+                        <div class="mm-group__icon-box">
+                            <i class="icon icon_shopping"></i>
+                            <span>Шоппинг</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li><a href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="mm-group">
+                    <a href="#book">
+                        <div class="mm-group__icon-box">
+                            <i class="icon icon_book"></i>
+                            <span>Обучение, мастер классы</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="mm-group">
+                    <a href="#child">
+                        <div class="mm-group__icon-box">
+                            <div class="mm-badge">new</div>
+                            <i class="icon icon_child"></i>
+                            <span>Дети</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li><a href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <section class="checkout">
+            <div class="headline">
+                <h1 class="headline__title">Оформление заказа</h1>
+            </div>
+            <div class="checkout__wrap">
+                <div class="checkout__col-3">
+                    <ul class="vertical-nav">
+                        <li class="done"><a href="#">Адрес</a></li>
+                        <li class="done"><a href="#">Доставка</a></li>
+                        <li class="current"><a href="#">Оплата</a></li>
+                        <li class="disabled"><a href="#">Завершение</a></li>
+                    </ul>
+                </div>
+                <div class="checkout__col-5">
+                    <div class="payent-options">
+                        <span class="payent-options__title">Варианты оплаты</span>
+                        <form action="">
+                            <label class="form__radio form__radio_md">
+                                <input type="radio" name="radio" checked>
+                                <div class="radio-icon"></div>
+                                <span class="radio-label">Наличными курьеру</span>
+                            </label>
+                            <label class="form__radio form__radio_md">
+                                <input type="radio" name="radio">
+                                <div class="radio-icon"></div>
+                                <span class="radio-label">
+                                    Платежными системами
+                                    <img src="../images/payme.png" srcset="../images/payme@2x.png 2x, ../images/payme@3x.png 3x" height="15px" class="payme">
+                                    <img src="../images/click.png" srcset="../images/click@2x.png 2x, ../images/click@3x.png 3x" height="20px" class="click">
+                                </span>
+                            </label>
+                            <label class="form__radio form__radio_md">
+                                <input type="radio" name="radio">
+                                <div class="radio-icon"></div>
+                                <span class="radio-label">Кредитная карта</span>
+                            </label>
+                            <div class="credit-card-form credit-card-form_visible">
+                                <div class="credit-card-form__wrap">
+                                    <span class="credit-card-form__title">Платежные данные</span>
+                                    <label class="form__input">
+                                        <input type="text" placeholder="Владелец как на карте">
+                                        <span class="input-error-message">нехватает @</span>
+                                    </label>
+                                    <label class="form__input">
+                                        <input type="text" placeholder="Номер карты">
+                                        <span class="input-error-message">нехватает @</span>
+                                    </label>
+                                    <label class="form__input form__input_date">
+                                        <input type="text" placeholder="мм / гг">
+                                        <span class="input-error-message">нехватает @</span>
+                                    </label>
+                                    <label class="form__input form__input_cvv">
+                                        <input type="password" placeholder="CVV">
+                                        <span class="input-error-message">нехватает @</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="checkout__col-4">
+                    <div class="order-summary">
+                        <span class="order-summary__title">Сводка по заказу</span>
+                        <ul class="order-summary__list">
+                            <li><span class="name">Товары на сумму</span><span class="count">3 000 000</span></li>
+                            <li><span class="name">Купон</span><span class="count">10 %</span></li>
+                            <li><span class="name">Доставка</span><span class="count">5 000</span></li>
+                        </ul>
+                        <span class="total-price">Общая стоимость</span>
+                        <div class="total-price__count">
+                            <span class="total-price__old">3 005 000</span>
+                            <span class="total-price__current">2 705 000</span>
+                        </div>
+                        <a href="#" class="button button_default">Продолжить</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer__wrap">
+            <div class="footer__col-3">
+                <a href="#" class="footer__logo"><img src="../images/logo-giver.svg" class="logo-image"></a>
+                <span class="copyright-date">© 2018-2020 Giver</span>
+                <ul class="ligal-links">
+                    <li><a href="#"> Обработка персональных данных</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li><a href="#">Публичная оферта</a></li>
+                </ul>
+            </div>
+            <div class="footer__col-5">
+                <ul class="footer__links">
+                    <li><a href="#">Компания</a></li>
+                    <li><a href="#">Как работает Giver</a></li>
+                    <li><a href="#">Вопросы и ответы</a></li>
+                </ul>
+                <ul class="footer__links">
+                    <li><a href="#">Оплата и возврат</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Партнерам</a></li>
+                </ul>
+            </div>
+            <div class="footer__col-3">
+                <div class="contact-info">
+                    <a href="#" class="button button_outline"><i class="icon icon_phone"></i><span>связаться с нами</span></a>
+                    <span class="contact-info__hotline-title">Горячая линия для пользователей:</span>
+                    <a href="tel:#" class="contact-info__hotline-phone">998 90 555 22 11</a>
+                    <a href="#" class="contact-info__email">info@giver.uz</a>
+                </div>
+            </div>
+            <div class="footer__col-1">
+                <ul class="socials">
+                    <li><a href="#"><i class="icon icon_tw"></i></a></li>
+                    <li><a href="#"><i class="icon icon_fb_boxed"></i></a></li>
+                    <li><a href="#"><i class="icon icon_inst"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-info">Все права защищены. Подарочные сертификаты по всему Узбекистану!</div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="../js/jquery.nice-select.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

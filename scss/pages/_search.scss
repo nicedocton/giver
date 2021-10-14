@@ -1,0 +1,148 @@
+.search {
+    width: 100%;
+    margin-top: 63px;
+    @extend .row;
+
+    &__wrap,
+    &__cards {
+        @extend .row;
+    }
+
+    .card__wrap {
+        @extend .col-lg-4;
+        @extend .col-md-5;
+        @extend .default-col-padding;
+        float: left;
+    }
+
+    &__results {
+        @extend .col-lg-9;
+        @extend .col-md-7;
+        padding: 0!important;
+        float: left;
+    }
+
+    &__cards {
+        
+        .card {
+            @extend .col-lg-4;
+            @extend .col-md-6;
+            @extend .default-col-padding;
+
+            &__badge {
+                left: 20px;
+            }
+        }
+    }
+}
+
+.filters {
+    margin-bottom: 40px;
+    display: inline-block;
+    width: 100%;
+
+    .form-radio {
+        display: inline-block;
+    }
+}
+
+.items-type {
+    display: inline-block;
+    margin-top: 7px;
+    
+    li,
+    .li {
+        margin-right: 32px;
+        display: inline-block;
+
+        a {
+            position: relative;
+            color: $black;
+
+            &:after {
+                position: absolute;
+                content: "";
+                left: 50%;
+                right: 50%;
+                height: 2px;
+                background-color: $sunflower-yellow;
+                bottom: -4px;
+                opacity: 0;
+                transition: .2s ease-in-out;
+            }
+        }
+
+        &_active {
+
+            a {
+                font-weight: 700;
+
+                &:after {
+                    left: 0;
+                    right: 0;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.cta_search {
+    margin-top: 80px;
+}
+
+.headline__search-page {
+    margin-bottom: 53px;
+}
+
+.dropdown__group {
+    float: right;
+}
+
+.megamenu + .searchbar {
+    margin-top: 40px;
+}
+
+.pagination_search-page {
+    margin-bottom: 90px;
+}
+
+@media (max-width: 820px) {
+    .search {
+
+        &__cards {
+            padding-right: 25px;
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    .search {
+
+        &__cards {
+            padding-right: 0;
+            width: 100%;
+        }
+
+        &__results {
+            .items-type {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .filters {
+        text-align: center;
+    }
+
+    .search__cards {
+        padding: 0 15px;
+        margin: 0;
+    }
+
+    .search__cards .card {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+}

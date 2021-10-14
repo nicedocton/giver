@@ -1,0 +1,106 @@
+.page-content {
+
+    .card {
+        @extend .col-md-6;
+        @extend .default-col-padding;
+        float: left;
+
+        &__badge {
+            left: 20px;
+        }
+    }
+}
+
+.sidebar,
+.page-content {
+
+    &_col-3,
+    &_col-4,
+    &_col-6,
+    &_col-8,
+    &_col-9 {
+        @extend .default-col-padding;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: -2px;
+    }
+
+    &_col-3 {
+        @extend .col-lg-3;
+        @extend .col-md-12;
+    }
+
+    &_col-4 {
+        @extend .col-lg-4;
+        @extend .col-md-12;
+    }
+
+    &_col-6,
+    &__col-6 {
+        @extend .col-lg-6;
+        @extend .col-md-12;
+    }
+
+    &__col-6 {
+        float: left;
+    }
+
+    &_col-8 {
+        @extend .col-lg-8;
+        @extend .col-md-12;
+    }
+
+    &_col-9 {
+        @extend .col-lg-9;
+        @extend .col-md-12;
+    }
+}
+
+.wishlist-items {
+    margin: 0 -10px;
+    width: calc(100% + 20px);
+    display: inline-block;
+
+    .delete-from-favorites {
+        display: inline-block;
+    }
+}
+
+.pagination_wishlist {
+    margin-bottom: 40px;
+}
+
+.clear-favorites {
+    font-size: 12px;
+    margin-bottom: 37px;
+    display: inline-block;
+    float: right;
+}
+
+@media (max-width: 820px) {
+    .page-content {
+        max-width: 720px;
+        display: block;
+        margin: auto;
+    }
+
+    .sidebar {
+
+        &_col-4,
+        &_col-3 {
+            max-width: 720px;
+            display: block;
+            margin: auto;
+        }
+    }
+
+    .clear-favorites {
+        margin-top: -15px;
+    }
+}
+
+@media (max-width: 420px) {
+    .clear-favorites {
+        margin-top: 25px;
+    }
+}

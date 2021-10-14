@@ -1,0 +1,276 @@
+.order-info-confirm {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: solid 1px $very-light-pink;
+    display: inline-block;
+    width: 100%;
+
+    &__title {
+        font-size: 12px;
+        color: $brown-grey;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.info-column {
+    display: inline-block;
+    float: left;
+    width: 25%;
+
+    h3 {
+        max-width: 140px;
+        margin-bottom: 25px;
+    }
+
+    p {
+        line-height: 1.79;
+    }
+}
+
+.orders-list {
+    display: inline-block;
+    float: left;
+    padding-bottom: 60px;
+    margin-bottom: 40px;
+    border-bottom: solid 1px $very-light-pink;
+
+    &__head {
+        margin-bottom: 37px;
+        display: inline-block;
+        width: 100%;
+        float: left;
+
+        span {
+            font-size: 12px;
+            color: $brown-grey;
+        }
+    }
+
+    &__column {
+        display: inline-block;
+        float: left;
+        width: 15%;
+
+        &:nth-child(1) {
+            width: 55%;
+        }
+    }
+}
+
+.order-item {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin-bottom: 23px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &__image {
+        max-width: 100px;
+        width: 100%;
+        height: 57px;
+        border-radius: 5px;
+        background-position: center;
+        background-size: cover;
+        display: inline-block;
+        float: left;
+        margin-right: 20px;
+    }
+
+    &__title {
+        margin-bottom: 0;
+        margin-top: 4px;
+    }
+
+    &__category {
+        font-size: 12px;
+        color: $brown-grey;
+    }
+
+    &__price {
+        font-weight: 600;
+        margin-top: 6px;
+    }
+
+    &__count {
+        width: 75px;
+        text-align: center;
+        margin-top: 6px;
+    }
+
+    &__tatal {
+        font-weight: 600;
+        margin-top: 6px;
+    }
+}
+
+.order-info-summary {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: solid 1px $very-light-pink;
+
+    &__wrap {
+        max-width: 480px;
+        float: right;
+        width: 100%;
+    }
+
+    &__list {
+        margin-bottom: 30px;
+
+        li {
+            margin-bottom: 12px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            span {
+                max-width: 180px;
+                float: right;
+                width: 100%;
+            }
+        }
+    }
+
+    &__total {
+
+        .title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .price {
+            max-width: 180px;
+            float: right;
+            width: 100%;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .info-column {
+        width: 100%;
+        margin-bottom: 30px;
+
+        h3 {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+
+    .order-info-confirm {
+        padding-bottom: 0;
+    }
+
+    .order-item {
+        margin-bottom: 40px;
+
+        &__title {
+            margin-top: 0;
+        }
+
+        &__image {
+            width: auto;
+        }
+    }
+
+    .order-action {
+        text-align: center;
+        float: none!important;
+
+        .link {
+            margin-right: 0!important;
+            width: 100%;
+            display: inline-block;
+        }
+    }
+
+    .orders-list {
+
+        &__head {
+            display: none;
+        }
+
+        &__column {
+            width: 100%;
+            margin-bottom: -20px;
+
+            &:first-child {
+                width: 100%;
+                margin-bottom: -20px;
+            }
+
+            &:nth-child(2) {
+                display: inline-block;
+                width: auto;
+                margin-left: 120px;
+                position: relative;
+
+                &:after {
+                    position: absolute;
+                    content: "x";
+                    right: -19px;
+                    top: 5px;
+                }
+            }
+
+            &:nth-child(3) {
+                width: auto;
+            }
+
+            &:nth-child(4) {
+                width: auto;
+                float: right;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .order-item__image {
+        display: none;
+    }
+
+    .orders-list {
+        
+        &__column {
+
+            &:first-child {
+                height: 60px;
+            }
+
+            &:nth-child(2) {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .order-info-summary {
+        margin-bottom: 0;
+
+        &__list li span {
+            max-width: 100px;
+        }
+
+        &__total .price {
+            float: left;
+        }
+    }
+
+    .order-action {
+        text-align: center;
+
+        .link {
+            margin-right: 0!important;
+        }
+    }
+}

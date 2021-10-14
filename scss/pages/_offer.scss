@@ -1,0 +1,17 @@
+.offer {
+    margin-top: 85px;
+    width: 100%;
+    margin-bottom: 15px;
+    @extend .wrapper;
+}
+
+.cta_offer {
+    margin-top: 90px;
+}
+
+@media (max-width: 820px) {
+    
+    .offer {
+        margin-top: 50px;
+    }
+}

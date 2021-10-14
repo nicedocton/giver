@@ -1,0 +1,13 @@
+.cta_auth {
+    margin-top: 130px;
+}
+
+@media (max-width: 480px) {
+    .auth_signin,
+    .auth_signup {
+        
+        .headline__link {
+            max-width: 50%;
+        }
+    }
+}

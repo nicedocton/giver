@@ -1,0 +1,114 @@
+.checkout {
+
+    &__wrap {
+        @extend .row;
+    }
+
+    &__col-3,
+    &__col-4,
+    &__col-5,
+    &__col-9 {
+        @extend .default-col-padding;
+    }
+
+    &__col-3 {
+        @extend .col-lg-3;
+    }
+
+    &__col-4 {
+        @extend .col-lg-4;
+    }
+
+    &__col-5 {
+        @extend .col-lg-5;
+    }
+
+    &__col-6 {
+        @extend .col-lg-6;
+    }
+
+    &__col-9 {
+        @extend .col-lg-9;
+    }
+
+    .form__wrap {
+        max-width: 280px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    &-delivery,
+    &-payment {
+        margin-bottom: 140px; 
+    }
+}
+
+.delivery-form {
+    @extend .col-md-10;
+    padding: 0!important;
+
+    &__title {
+        font-size: 12px;
+        color: $brown-grey;
+        margin-bottom: 37px;
+    }
+}
+
+.order-action {
+    float: right;
+
+    .link {
+        margin-right: 82px;
+        vertical-align: top;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 820px) {
+    .checkout {
+
+        &__wrap {
+            max-width: 700px;
+            margin: auto;
+        }
+        
+        &__col-3,
+        &__col-4,
+        &__col-5,
+        &__col-9 {
+            padding: 0;
+            margin: 0;
+        }
+
+        &-delivery__col-4,
+        &__col-6 {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        &__col-9 {
+            margin-top: 30px;
+            margin-bottom: 70px;
+        }
+
+        &__col-5 {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .checkout {
+
+        &__wrap {
+            width: 100%;
+            padding: 0 15px;
+        }
+
+        &__col-3 {
+            overflow-y: hidden;
+            width: 100%;
+        }
+    }
+}

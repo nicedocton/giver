@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Components Preview</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+
+    <div class="wrapper">
+        <section>
+            <h2>Forms</h2>
+            <form action="" class="form">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>Inputs & Select</h3>
+                        <label class="form__input form__input_search">
+                            <input type="email" placeholder="Например: Посещение спа">
+                            <input type="submit" value="" class="submit-search">
+                        </label>
+                        <label class="form__input">
+                            <input type="email" placeholder="E-mail">
+                            <span class="input-error-message">нехватает @</span>
+                        </label>
+                        <label class="form__input">
+                            <input type="password" placeholder="Пароль">
+                            <a href="#" class="reset-password">Забыл(а) пароль</a>
+                            <span class="input-error-message">неверный пароль</span>
+                        </label>
+                        <label class="form__input form__input_has-error">
+                            <input type="email" placeholder="E_mail">
+                            <span class="input-error-message">нехватает @</span>
+                        </label>
+                        <label class="form__textarea">
+                            <textarea placeholder="Отзыв"></textarea>
+                            <span class="input-error-message">Недопустимые слова</span>
+                        </label>
+                        <div class="select">
+                            <select name="Select" id="">
+                                <option value="option-01" selected>option-01</option>
+                                <option value="option-02">option-02</option>
+                                <option value="option-03">option-03</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Radio size SM</h3>
+                        <label class="form__radio form__radio_sm">
+                            <input type="radio" name="radio" checked>
+                            <div class="radio-icon"></div>
+                            <span class="radio-label">radio 01</span>
+                        </label>
+                        <label class="form__radio form__radio_sm">
+                            <input type="radio" name="radio">
+                            <div class="radio-icon"></div>
+                            <span class="radio-label">radio 02</span>
+                        </label>
+                        <label class="form__radio form__radio_sm">
+                            <input type="radio" name="radio">
+                            <div class="radio-icon"></div>
+                            <span class="radio-label">radio 03</span>
+                        </label>
+                        <div class="rating__group">
+                            <span class="rating__label">Ваша отметка</span>
+                            <div class="rating">
+                                <label>
+                                    <input type="radio" name="rating">
+                                    <span class="rating__stars"></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating">
+                                    <span class="rating__stars"></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating">
+                                    <span class="rating__stars"></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating">
+                                    <span class="rating__stars"></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating">
+                                    <span class="rating__stars"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Radio size MD</h3>
+                        <label class="form__radio form__radio_md">
+                            <input type="radio" name="radio" checked>
+                            <div class="radio-icon"></div>
+                            <span class="radio-label">radio 01</span>
+                        </label>
+                        <label class="form__radio form__radio_md">
+                            <input type="radio" name="radio">
+                            <div class="radio-icon"></div>
+                            <span class="radio-label">radio 02</span>
+                        </label>
+                        <label class="form__radio form__radio_md">
+                            <input type="radio" name="radio">
+                            <div class="radio-icon"></div>
+                            <span class="radio-label">radio 03</span>
+                        </label>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Checkbox</h3>
+                        <label class="form__checkbox">
+                            <input type="checkbox">
+                            <div class="checkbox-icon"></div>
+                            <span class="checkbox-label">Сохранить адрес</span>
+                        </label>
+
+                        <h3>Range</h3>
+                        <label class="form__range">
+                            <span class="form-range-min-value">1</span>
+                            <input type="range" name="persons-count" min="1" max="10" step="1" value="0">
+                            <output for="persons-count" onforminput="value = foo.valueAsNumber;"></output>
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <h3>Option select</h3>
+                        <label class="form__option-select">
+                            <input type="radio" name="form-option-select" checked>
+                            <div class="form__option-select-container osrc">
+                                <h3 class="osrc__title">Курьером</h3>
+                                <span class="osrc__description">Не ждите бесплатной доставки :)</span>
+                                <div class="osrc__price">5 000</div>
+                            </div>
+                        </label>
+                        <label class="form__option-select">
+                            <input type="radio" name="form-option-select">
+                            <div class="form__option-select-container osrc">
+                                <h3 class="osrc__title">My Taxi</h3>
+                                <span class="osrc__description">Бесплатно при сумме  заказа от 200 000</span>
+                                <div class="osrc__price">7 000</div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

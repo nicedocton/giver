@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Components Preview</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <button class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="header__mobile">
+            <ul class="header__mobile-list">
+                <li><a href="#">Профиль</a></li>
+                <li><a href="#">Мои заказы</a></li>
+                <li><a href="#">Избранное</a></li>
+                <li><a href="#">Частые вопросы</a></li>
+                <li><a href="#">Стать партнером</a></li>
+                <li><a href="#">Выйти</a></li>
+            </ul>
+        </div>
+        <a href="#" class="header__logo"><img src="../images/logo-giver.svg" class="logo-image" height="50px"></a>
+        <a href="#" class="button button_outline button_become-a-partner">Стать партнером</a>
+        <a href="#" class="link link_header-faq">Частые вопросы</a>
+        <div class="header__right-nav">
+            <div class="cart-popup">
+                <a href="#" class="cart-popup__button">
+                    <div class="cart-icon"></div>
+                    <span class="cart-empty">Пусто</span>
+                    <span class="cart-items-count">2 товара</span>
+                    <span class="cart-cta-text">Перейти</span>
+                </a>
+                <div class="cart-popup__content">
+                    <div class="cart-popup__mobile-head">
+                        <h3>Корзина</h3>
+                        <button type="button" class="close-cart-popup"><i class="icon icon_cancel"></i></button>
+                    </div>
+                    <div class="cart-popup__list">
+                        <div class="popup-item">
+                            <button class="popup-item__remove"><i class="icon icon_cancel"></i></button>
+                            <div class="popup-item__cover">
+                                <img src="../images/content/bitmap-copy@2x.jpg" class="popup-item__cover-image" alt="">
+                            </div>
+                            <h3 class="popup-item__title">Alfa Education</h3>
+                            <span class="popup-item__category">Повышение квалификации</span>
+                        </div>
+                        <div class="popup-item">
+                            <button class="popup-item__remove"><i class="icon icon_cancel"></i></button>
+                            <div class="popup-item__cover">
+                                <img src="../images/content/bitmap-copy@2x.jpg" class="popup-item__cover-image" alt="">
+                            </div>
+                            <h3 class="popup-item__title">Пуфик</h3>
+                            <span class="popup-item__category">Организация праздников</span>
+                        </div>
+                        <div class="popup-item">
+                            <button class="popup-item__remove"><i class="icon icon_cancel"></i></button>
+                            <div class="popup-item__cover">
+                                <img src="../images/content/bitmap-copy@2x.jpg" class="popup-item__cover-image" alt="">
+                            </div>
+                            <h3 class="popup-item__title">Пуфик</h3>
+                            <span class="popup-item__category">Организация праздников</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown dropdown_user">
+                <a href="#" class="dropdown__button"><i class="icon icon_user"></i><span>Тимур</span><i class="icon icon_chevron_down"></i></a>
+                <div class="dropdown__menu">
+                    <ul class="dropdown__menu-list">
+                        <li><a href="#">Профиль</a></li>
+                        <li><a href="#">Мои заказы</a></li>
+                        <li><a href="#">Избранное</a></li>
+                        <li><a href="#">Выйти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+
+        <section class="searchbar searchbar_mini">
+            <div class="searchbar__wrap">
+                <div class="searchbar__left">
+                    <h2 class="searchbar__title">Безпроигрышный<br>подарок</h2>
+                    <p class="searchbar__subtitle">Сертификаты для всех<br>и на все случаи жизни</p>
+                </div>
+                <div class="searchbar__right">
+                    <form action="" class="searchbar__form">
+                        <label class="form__input form__input_search">
+                            <input type="email" placeholder="Например: Посещение спа">
+                            <input type="submit" value="" class="submit-search">
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="megamenu">
+            <ul class="megamenu__list">
+                <li class="mm-group">
+                    <a href="#food">
+                        <div class="mm-group__icon-box">
+                            <i class="icon icon_food"></i>
+                            <span>Еда</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li><a href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="mm-group">
+                    <a href="#healthy_life">
+                        <div class="mm-group__icon-box">
+                            <i class="icon icon_healthy_life"></i>
+                            <span>Здоровый образ жизни</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li><a href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="mm-group">
+                    <a href="#sport">
+                        <div class="mm-group__icon-box">
+                            <i class="icon icon_sport"></i>
+                            <span>Активный отдых</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li><a href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="mm-group">
+                    <a href="#beauty">
+                        <div class="mm-group__icon-box">
+                            <i class="icon icon_beauty"></i>
+                            <span>Красота и здоровье</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li><a href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="mm-group">
+                    <a href="#entertainment">
+                        <div class="mm-group__icon-box">
+                            <i class="icon icon_entertainment"></i>
+                            <span>Развлечения</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li><a href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="mm-group">
+                    <a href="#shopping">
+                        <div class="mm-group__icon-box">
+                            <i class="icon icon_shopping"></i>
+                            <span>Шоппинг</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li><a href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="mm-group">
+                    <a href="#book">
+                        <div class="mm-group__icon-box">
+                            <i class="icon icon_book"></i>
+                            <span>Обучение, мастер классы</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li><a href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="mm-group">
+                    <a href="#child">
+                        <div class="mm-group__icon-box">
+                            <div class="mm-badge">new</div>
+                            <i class="icon icon_child"></i>
+                            <span>Дети</span>
+                        </div>
+                        <div class="mm-group__dropdown">
+                            <ul class="mm-group__dropdown-list">
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li class="active"><a href="#">Массаж</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Массаж</a></li>
+                                <li><a href="#">Фитнес</a></li>
+                                <li><a href="#">Маникюр и педикюр</a></li>
+                                <li><a href="#">Бассейны</a></li>
+                                <li><a href="#">Тренажоры</a></li>
+                                <li><a href="#">Клиники</a></li>
+                                <li><a href="#">Пластика</a></li>
+                                <li><a href="#">Массаж</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="breadcrumbs">
+            <span class="breadcrumbs__title">Вы тут:</span>
+            <ul class="breadcrumbs__list">
+                <li><a href="#">Красота и здоровье</a></li>
+                <li><a href="#">Массаж</a></li>
+                <li>Thaya day SPA</li>
+            </ul>
+        </div>
+
+        <section class="company">
+            <div class="company__wrap">
+                <div class="company__col-3">
+                    <div class="company__logo" style="background-image: url(../images/content/spa-logo.jpg)"></div>
+                </div>
+                <div class="company__col-4">
+                    <div class="company__rating">4.1</div>
+                    <h2 class="company__title">Thaya Day SPA</h2>
+                    <span class="company__category">Тайский массаж</span>
+                </div>
+                <div class="company__col-3">
+                    <div class="dropdown dropdown_md dropdown_district">
+                        <a href="#" class="dropdown__button"><i class="icon icon_location"></i><span>Яккасарайский ф-л</span><i class="icon icon_chevron_down"></i></a>
+                        <div class="dropdown__menu">
+                            <ul class="dropdown__menu-list">
+                                <li><a href="#">Шайхантохурский ф-л</a></li>
+                                <li><a href="#">М. Улугбекский ф-л</a></li>
+                                <li><a href="#">Юнусабадский ф-л</a></li>
+                                <li><a href="#">Чиланзарский ф-л</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="company__address">г. Ташкент, Яккасарайский р-он, ул. Мирабад, д. 77</p>
+                    <a href="#" class="company__on-map-link">Смотреть на карте</a>
+                </div>
+                <div class="company__col-2">
+                    <ul class="company__phones">
+                        <li><a href="#">93 515 54 45</a></li>
+                        <li><a href="#">93 515 54 45</a></li>
+                    </ul>
+                    <a href="mailto:taya@spa.uz" class="company__email">taya@spa.uz</a>
+                </div>
+            </div>
+        </section>
+            <div class="tab-nav-wrap">
+                <ul class="tab-nav">
+                    <li class="tab-nav__link active" data-tab="tab_1">О компании</li>
+                    <li class="tab-nav__link" data-tab="tab_2">Сертификаты</li>
+                    <li class="tab-nav__link" data-tab="tab_3">Акции</li>
+                    <li class="tab-nav__link" data-tab="tab_4">Отзывы <span class="tab-badge">14</span></li>
+                </ul>
+            </div>
+            <div class="tab-content active" id="tab_1">
+                <div class="certificate">
+                    <div class="certificate__info">
+                        <h2 class="certificate__title">Посетите релаксирующий Тайский массаж 
+                            <!-- <div class="certificate__badge certificate__badge_new">новинка</div>-->
+                            <div class="certificate__badge certificate__badge_best-seller">хит продаж</div>
+                            <!-- <div class="certificate__badge certificate__badge_users-choice">выбор покупателей</div>
+                            <div class="certificate__badge certificate__badge_hot">горячее предложение</div> -->
+                        </h2>
+                        <p class="certificate__description">Расслабиться и восстановить жизненные силы, достичь гармонии тела, души и сознания, насладиться атмосферой полного релакса в сочетании с ароматерапией – всё, что для этого нужно, – купить сертификат в спа-салон.</p>
+                    </div>
+                    <div class="certificate__thumbnails">
+                        <div class="item-slider item-slider_default">
+                            <div class="item-slider__single">
+                                <div class="item-slider__single-image">
+                                    <img src="http://placehold.it/1360x900" width="100%" alt="">
+                                </div>
+                                <div class="item-slider__single-image">
+                                    <img src="http://placehold.it/1360x900" width="100%" alt="">
+                                </div>
+                                <div class="item-slider__single-image">
+                                    <img src="http://placehold.it/1360x900" width="100%" alt="">
+                                </div>
+                                <div class="item-slider__single-image">
+                                    <img src="http://placehold.it/1360x900" width="100%" alt="">
+                                </div>
+                            </div>
+                            <div class="item-slider__nav">
+                                <div class="item-slider__nav-image">
+                                    <img src="http://placehold.it/240x160" width="100%" alt="">
+                                </div>
+                                <div class="item-slider__nav-image">
+                                    <img src="http://placehold.it/240x160" width="100%" alt="">
+                                </div>
+                                <div class="item-slider__nav-image">
+                                    <img src="http://placehold.it/240x160" width="100%" alt="">
+                                </div>
+                                <div class="item-slider__nav-image">
+                                    <img src="http://placehold.it/240x160" width="100%" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="tab-content__group">
+                    <div class="vertical-tabs">
+                        <div class="vertical-nav__wrap">
+                            <ul class="tab-nav-vertical vertical-nav_company"">
+                                <li class="tab-nav-vertical__link active" data-tab="tab_a1">Описание</li>
+                                <li class="tab-nav-vertical__link" data-tab="tab_a2">Условия сертификата</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content-vertical active" id="tab_a1">
+                            <div class="company__description">
+                                <div class="wysiwyg">
+                                    <p><strong>«Золотой Лотос» (продолжительность 120 минут):</strong>распаривание в кедровой бочке с ингаляцией (мята, эвкалипт, лимон); нежный медово-солевой мусс-пилинг всего тела; грязевое обертывание всего тела с минералами Мертвого моря; индийский oil-массаж всего тела с применением натуральных ароматических масел на основе вытяжек из тропических растений и фруктов; приветственный напиток на выбор и Чайная церемония со сладостями (орехи и сухофрукты). </p>
+                                    <div>
+                                        <img src="../images/content/bitmap-copy-5@2x.jpg" alt="">
+                                        <p><strong>«Чары Камня» (продолжительность 120 минут):</strong>распаривание в кедровой бочке с ингаляцией (мята, эвкалипт, лимон); восточный пилинг всего тела черным марокканским мылом и рукавичкой Kessа; шоколадное обертывание всего тела крем-маской; принятие душа; стоун-терапия и аромамассаж всего тела с использованием аромасредств из Марокко; приветственный напиток на выбор и Чайная церемония со сладостями (орехи и сухофрукты). шоколадное обертывание всего тела крем-маской; принятие душа; стоун-терапия и аромамассаж всего тела с использованием аромасредств из Марокко; приветственный напиток на выбор и Чайная церемония со сладостями (орехи и сухофрукты). </p>
+                                    </div>
+                                    <div>
+                                        <p><strong>«Сказка Махараджи» (продолжительность 120 минут):</strong>восточный пилинг всего тела сахарным фруктовым аромаскрабом; виноградное обертывание всего тела питательной крем-маской; принятие душа; индийский oil-массаж всего тела с фруктовым маслом, выводящим шлаки и токсины; питание кожи аромамуссом; приветственный напиток на выбор и Чайная церемония со сладостями (орехи и сухофрукты). выводящим шлаки и токсины; питание кожи аромамуссом; приветственный напиток на выбор и Чайная церемония со сладостями.</p>
+                                        <img src="../images/content/bitmap-copy-10@2x.jpg" alt="">
+                                    </div>
+                                </div>
+                                <section class="item-banner item-banner_sm">
+                                    <a href="#">
+                                        <div class="item-banner__cover">
+                                            <div class="item-banner__cover-image" style="background-image: url(../images/content/bitmap-copy-12@2x.jpg)"></div>
+                                        </div>
+                                        <span class="item-banner__adv-helper">Реклама</span>
+                                        <!-- <div class="item-banner__badge item-banner__badge_new">новинка</div>
+                                        <div class="item-banner__badge item-banner__badge_best-seller">хит продаж</div>
+                                        <div class="item-banner__badge item-banner__badge_users-choice">выбор покупателей</div>-->
+                                        <div class="item-banner__badge item-banner__badge_hot">горячее предложение</div>
+                                        <div class="item-banner__content">
+                                            <div class="item-banner__rating">4.2</div>
+                                            <h2 class="item-banner__title">Дикая Орхидея</h2>
+                                            <span class="item-banner__category">Контактные массажи, расслабляющие бассейны</span>
+                                        </div>
+                                    </a>
+                                </section>
+                                <div class="wysiwyg">
+                                    <div>
+                                        <img src="../images/content/bitmap-copy-13@2x.jpg" alt="">
+                                        <p><strong>«Роскошное Манго» (продолжительность 150 минут):</strong>распаривание в кедровой бочке с ингаляцией (мята, эвкалипт, лимон); увлажняющий гоммаж всего тела манговым молочком и рукавичкой Kesse; кремовое манговое обертывание всего тела с фруктовым экстрактом и ликопеном; принятие душа; разогревающая стоун-терапия всего тела; аромамассаж всего тела манговым крем-маслом; приветственный напиток на выбор и Чайная церемония со сладостями (орехи и сухофрукты). разогревающая стоун-терапия всего тела; аромамассаж всего тела манговым крем-маслом.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content-vertical" id="tab_a2">
+                            <div class="company__description">
+                                <div class="wysiwyg">
+                                    <p><strong>«Золотой Лотос» (продолжительность 120 минут):</strong>распаривание в кедровой бочке с ингаляцией (мята, эвкалипт, лимон); нежный медово-солевой мусс-пилинг всего тела; грязевое обертывание всего тела с минералами Мертвого моря; индийский oil-массаж всего тела с применением натуральных ароматических масел на основе вытяжек из тропических растений и фруктов; приветственный напиток на выбор и Чайная церемония со сладостями (орехи и сухофрукты). </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="company-contacts">
+                    <div class="company-contacts__col-3">
+                            <h2>Как к нам добраться</h2>
+                            <div class="dropdown dropdown_md dropdown_district">
+                            <a href="#" class="dropdown__button"><i class="icon icon_location"></i><span>Яккасарайский ф-л</span><i class="icon icon_chevron_down"></i></a>
+                            <div class="dropdown__menu">
+                                <ul class="dropdown__menu-list">
+                                    <li><a href="#">Шайхантохурский ф-л</a></li>
+                                    <li><a href="#">М. Улугбекский ф-л</a></li>
+                                    <li><a href="#">Юнусабадский ф-л</a></li>
+                                    <li><a href="#">Чиланзарский ф-л</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="company__address">г. Ташкент, Яккасарайский р-он, ул. Мирабад, д. 77</p>
+                        <a href="#" class="company__share-friend">Отправить другу</a>
+                        <ul class="company__phones">
+                            <li><a href="#">93 515 54 45</a></li>
+                            <li><a href="#">93 515 54 45</a></li>
+                        </ul>
+                        <a href="mailto:taya@spa.uz" class="company__email">taya@spa.uz</a>
+                    </div>
+                    <div class="company-contacts__col-9">
+                        <div class="map">
+                            <iframe src="https://yandex.uz/map-widget/v1/-/CGV6vVZ2" width="100%" height="100%" frameborder="0" allowfullscreen="true"></iframe>
+                            <div class="map__marker"><i class="icon icon_location"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="tab-content" id="tab_2">
+                <div class="certificate">
+                    <div class="certificate__info">
+                        <h2 class="certificate__title">Посетите релаксирующий Тайский массаж 
+                            <!-- <div class="certificate__badge certificate__badge_new">новинка</div>-->
+                            <div class="certificate__badge certificate__badge_best-seller">хит продаж</div>
+                            <!-- <div class="certificate__badge certificate__badge_users-choice">выбор покупателей</div>
+                            <div class="certificate__badge certificate__badge_hot">горячее предложение</div> -->
+                        </h2>
+                        <p class="certificate__description">Расслабиться и восстановить жизненные силы, достичь гармонии тела, души и сознания, насладиться атмосферой полного релакса в сочетании с ароматерапией – всё, что для этого нужно, – купить сертификат в спа-салон.</p>
+                        <form action="" class="product-cart-form">
+                            <div class="select">
+                                <select name="Select" id="">
+                                    <option value="option-01" selected>Выберите сумму</option>
+                                    <option value="option-02">150 000 – 300 000 сум</option>
+                                    <option value="option-03">150 000 – 300 000 сум</option>
+                                </select>
+                            </div>
+                            <div class="product-buttons-wrap">
+                                <button type="submit" class="button button_default">Купить</button>
+                                <button class="button button_outline button_favorites active"><i class="icon icon_heart-outline"></i><span>В избранное</span></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="certificate__thumbnails">
+                        <div class="item-slider item-slider_default">
+                            <div class="item-slider__single">
+                                <div class="item-slider__single-image">
+                                    <img src="http://placehold.it/1360x900" width="100%" alt="">
+                                </div>
+                                <div class="item-slider__single-image">
+                                    <img src="http://placehold.it/1360x900" width="100%" alt="">
+                                </div>
+                                <div class="item-slider__single-image">
+                                    <img src="http://placehold.it/1360x900" width="100%" alt="">
+                                </div>
+                                <div class="item-slider__single-image">
+                                    <img src="http://placehold.it/1360x900" width="100%" alt="">
+                                </div>
+                            </div>
+                            <div class="item-slider__nav">
+                                <div class="item-slider__nav-image">
+                                    <img src="http://placehold.it/240x160" width="100%" alt="">
+                                </div>
+                                <div class="item-slider__nav-image">
+                                    <img src="http://placehold.it/240x160" width="100%" alt="">
+                                </div>
+                                <div class="item-slider__nav-image">
+                                    <img src="http://placehold.it/240x160" width="100%" alt="">
+                                </div>
+                                <div class="item-slider__nav-image">
+                                    <img src="http://placehold.it/240x160" width="100%" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content__group">
+                    <div class="vertical-tabs">
+                        <div class="vertical-nav__wrap">
+                            <ul class="tab-nav-vertical vertical-nav_company"">
+                                <li class="tab-nav-vertical__link active" data-tab="tab_b1">Описание</li>
+                                <li class="tab-nav-vertical__link" data-tab="tab_b2">Условия сертификата</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content-vertical active" id="tab_b1">
+                            <div class="company__description">
+                                <div class="wysiwyg">
+                                    <p><strong>«Золотой Лотос» (продолжительность 120 минут):</strong>распаривание в кедровой бочке с ингаляцией (мята, эвкалипт, лимон); нежный медово-солевой мусс-пилинг всего тела; грязевое обертывание всего тела с минералами Мертвого моря; индийский oil-массаж всего тела с применением натуральных ароматических масел на основе вытяжек из тропических растений и фруктов; приветственный напиток на выбор и Чайная церемония со сладостями (орехи и сухофрукты). </p>
+                                    <div>
+                                        <img src="../images/content/bitmap-copy-5@2x.jpg" alt="">
+                                        <p><strong>«Чары Камня» (продолжительность 120 минут):</strong>распаривание в кедровой бочке с ингаляцией (мята, эвкалипт, лимон); восточный пилинг всего тела черным марокканским мылом и рукавичкой Kessа; шоколадное обертывание всего тела крем-маской; принятие душа; стоун-терапия и аромамассаж всего тела с использованием аромасредств из Марокко; приветственный напиток на выбор и Чайная церемония со сладостями (орехи и сухофрукты). шоколадное обертывание всего тела крем-маской; принятие душа; стоун-терапия и аромамассаж всего тела с использованием аромасредств из Марокко; приветственный напиток на выбор и Чайная церемония со сладостями (орехи и сухофрукты). </p>
+                                    </div>
+                                    <div>
+                                        <p><strong>«Сказка Махараджи» (продолжительность 120 минут):</strong>восточный пилинг всего тела сахарным фруктовым аромаскрабом; виноградное обертывание всего тела питательной крем-маской; принятие душа; индийский oil-массаж всего тела с фруктовым маслом, выводящим шлаки и токсины; питание кожи аромамуссом; приветственный напиток на выбор и Чайная церемония со сладостями (орехи и сухофрукты). выводящим шлаки и токсины; питание кожи аромамуссом; приветственный напиток на выбор и Чайная церемония со сладостями.</p>
+                                        <img src="../images/content/bitmap-copy-10@2x.jpg" alt="">
+                                    </div>
+                                </div>
+                                <section class="item-banner item-banner_sm">
+                                    <a href="#"></a>
+                                        <div class="item-banner__cover">
+                                            <div class="item-banner__cover-image" style="background-image: url(../images/content/bitmap-copy-12@2x.jpg)"></div>
+                                        </div>
+                                        <span class="item-banner__adv-helper">Реклама</span>
+                                        <!-- <div class="item-banner__badge item-banner__badge_new">новинка</div>
+                                        <div class="item-banner__badge item-banner__badge_best-seller">хит продаж</div>
+                                        <div class="item-banner__badge item-banner__badge_users-choice">выбор покупателей</div>-->
+                                        <div class="item-banner__badge item-banner__badge_hot">горячее предложение</div>
+                                        <div class="item-banner__content">
+                                            <div class="item-banner__rating">4.2</div>
+                                            <h2 class="item-banner__title">Дикая Орхидея</h2>
+                                            <span class="item-banner__category">Контактные массажи, расслабляющие бассейны</span>
+                                        </div>
+                                    </a>
+                                </section>
+                                <div class="wysiwyg">
+                                    <div>
+                                        <img src="../images/content/bitmap-copy-13@2x.jpg" alt="">
+                                        <p><strong>«Роскошное Манго» (продолжительность 150 минут):</strong>распаривание в кедровой бочке с ингаляцией (мята, эвкалипт, лимон); увлажняющий гоммаж всего тела манговым молочком и рукавичкой Kesse; кремовое манговое обертывание всего тела с фруктовым экстрактом и ликопеном; принятие душа; разогревающая стоун-терапия всего тела; аромамассаж всего тела манговым крем-маслом; приветственный напиток на выбор и Чайная церемония со сладостями (орехи и сухофрукты). разогревающая стоун-терапия всего тела; аромамассаж всего тела манговым крем-маслом.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content-vertical" id="tab_b2">
+                            <div class="company__description">
+                                <div class="wysiwyg">
+                                    <p><strong>«Золотой Лотос» (продолжительность 120 минут):</strong>распаривание в кедровой бочке с ингаляцией (мята, эвкалипт, лимон); нежный медово-солевой мусс-пилинг всего тела; грязевое обертывание всего тела с минералами Мертвого моря; индийский oil-массаж всего тела с применением натуральных ароматических масел на основе вытяжек из тропических растений и фруктов; приветственный напиток на выбор и Чайная церемония со сладостями (орехи и сухофрукты). </p>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="company-contacts">
+                    <div class="company-contacts__col-3">
+                            <h2>Как к нам добраться</h2>
+                            <div class="dropdown dropdown_md dropdown_district">
+                            <a href="#" class="dropdown__button"><i class="icon icon_location"></i><span>Яккасарайский ф-л</span><i class="icon icon_chevron_down"></i></a>
+                            <div class="dropdown__menu">
+                                <ul class="dropdown__menu-list">
+                                    <li><a href="#">Шайхантохурский ф-л</a></li>
+                                    <li><a href="#">М. Улугбекский ф-л</a></li>
+                                    <li><a href="#">Юнусабадский ф-л</a></li>
+                                    <li><a href="#">Чиланзарский ф-л</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="company__address">г. Ташкент, Яккасарайский р-он, ул. Мирабад, д. 77</p>
+                        <a href="#" class="company__share-friend">Отправить другу</a>
+                        <ul class="company__phones">
+                            <li><a href="#">93 515 54 45</a></li>
+                            <li><a href="#">93 515 54 45</a></li>
+                        </ul>
+                        <a href="mailto:taya@spa.uz" class="company__email">taya@spa.uz</a>
+                    </div>
+                    <div class="company-contacts__col-9">
+                        <div class="map">
+                            <iframe src="https://yandex.uz/map-widget/v1/-/CGV6vVZ2" width="100%" height="100%" frameborder="0" allowfullscreen="true"></iframe>
+                            <div class="map__marker"><i class="icon icon_location"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="tab-content" id="tab_3">
+                <div class="item-slider item-slider_with-text">
+                    <div class="item-slider__wrap">
+                        <div class="item-slider__single">
+                            <div class="item-slider__single-image" style="background-image: url(../images/content/bitmap-copy-33@2x.jpg)">
+                                <div class="item-slider__single-content">
+                                    <span class="title">Каждую среду до <strong>20% скидки</strong></span>
+                                    <span class="subtitle">На релаксирующий Тайский массаж</span>
+                                </div>
+                            </div>
+                            <div class="item-slider__single-image" style="background-image: url(../images/content/bitmap-copy-7@2x.jpg)">
+                                <div class="item-slider__single-content">
+                                    <span class="title">Каждую среду до <strong>30% скидки</strong></span>
+                                    <span class="subtitle">На релаксирующий Тайский массаж</span>
+                                </div>
+                            </div>
+                            <div class="item-slider__single-image" style="background-image: url(../images/content/bitmap-copy-6@2x.jpg)">
+                            <div class="item-slider__single-content">
+                                    <span class="title">Каждую среду до <strong>40% скидки</strong></span>
+                                    <span class="subtitle">На релаксирующий Тайский массаж</span>
+                                </div>
+                            </div>
+                            <div class="item-slider__single-image" style="background-image: url(../images/content/bitmap-copy-2@2x.jpg)">
+                            <div class="item-slider__single-content">
+                                    <span class="title">Каждую среду до <strong>50% скидки</strong></span>
+                                    <span class="subtitle">На релаксирующий Тайский массаж</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-slider__nav">
+                        <div class="item-slider__nav-image">
+                            <img src="http://placehold.it/240x160" width="100%" alt="">
+                        </div>
+                        <div class="item-slider__nav-image">
+                            <img src="http://placehold.it/240x160" width="100%" alt="">
+                        </div>
+                        <div class="item-slider__nav-image">
+                            <img src="http://placehold.it/240x160" width="100%" alt="">
+                        </div>
+                        <div class="item-slider__nav-image">
+                            <img src="http://placehold.it/240x160" width="100%" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="promo__description">
+                    <div class="wysiwyg">
+                        <span><strong>«Золотой Лотос» (продолжительность 120 минут):</strong>распаривание в кедровой бочке с ингаляцией (мята, эвкалипт, лимон); нежный медово-солевой мусс-пилинг всего тела; грязевое обертывание всего тела с минералами Мертвого моря; индийский oil-массаж всего тела с применением натуральных ароматических масел на основе вытяжек из тропических растений и фруктов; приветственный напиток на выбор и Чайная церемония со сладостями (орехи и сухофрукты). </span>
+                        <img src="../images/content/bitmap-copy-4@2x.jpg" alt="">
+                        <div>
+                            <p><strong>«Сказка Махараджи» (продолжительность 120 минут):</strong>восточный пилинг всего тела сахарным фруктовым аромаскрабом; виноградное обертывание всего тела питательной крем-маской; принятие душа; индийский oil-массаж всего тела с фруктовым маслом, выводящим шлаки и токсины; питание кожи аромамуссом; приветственный напиток на выбор и Чайная церемония со сладостями (орехи и сухофрукты). выводящим шлаки и токсины; питание кожи аромамуссом; приветственный напиток на выбор и Чайная церемония со сладостями.</p>
+                            <img src="../images/content/bitmap-copy-10@2x.jpg" alt="">
+                        </div>
+                    </div>
+                    <section class="item-banner item-banner_lg">
+                        <a href="#">
+                            <div class="item-banner__cover">
+                                <div class="item-banner__cover-image" style="background-image: url(../images/content/bitmap-copy-12@2x.jpg)"></div>
+                            </div>
+                            <!-- <div class="item-banner__badge item-banner__badge_new">новинка</div>
+                            <div class="item-banner__badge item-banner__badge_best-seller">хит продаж</div>
+                            <div class="item-banner__badge item-banner__badge_users-choice">выбор покупателей</div>-->
+                            <div class="item-banner__badge card__badge_hot">горячее предложение</div>
+                            <div class="item-banner__content">
+                                <div class="item-banner__rating">4.2</div>
+                                <h2 class="item-banner__title">Дикая Орхидея</h2>
+                                <span class="item-banner__category">Контактные массажи, расслабляющие бассейны</span>
+                            </div>
+                        </a>
+                    </section>
+                </div>
+                <section class="company-contacts">
+                    <div class="company-contacts__col-3">
+                            <h2>Как к нам добраться</h2>
+                            <div class="dropdown dropdown_md dropdown_district">
+                            <a href="#" class="dropdown__button"><i class="icon icon_location"></i><span>Яккасарайский ф-л</span><i class="icon icon_chevron_down"></i></a>
+                            <div class="dropdown__menu">
+                                <ul class="dropdown__menu-list">
+                                    <li><a href="#">Шайхантохурский ф-л</a></li>
+                                    <li><a href="#">М. Улугбекский ф-л</a></li>
+                                    <li><a href="#">Юнусабадский ф-л</a></li>
+                                    <li><a href="#">Чиланзарский ф-л</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="company__address">г. Ташкент, Яккасарайский р-он, ул. Мирабад, д. 77</p>
+                        <a href="#" class="company__share-friend">Отправить другу</a>
+                        <ul class="company__phones">
+                            <li><a href="#">93 515 54 45</a></li>
+                            <li><a href="#">93 515 54 45</a></li>
+                        </ul>
+                        <a href="mailto:taya@spa.uz" class="company__email">taya@spa.uz</a>
+                    </div>
+                    <div class="company-contacts__col-9">
+                        <div class="map">
+                            <iframe src="https://yandex.uz/map-widget/v1/-/CGV6vVZ2" width="100%" height="100%" frameborder="0" allowfullscreen="true"></iframe>
+                            <div class="map__marker"><i class="icon icon_location"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="tab-content" id="tab_4">
+                <div class="reviews">
+                    <div class="reviews__col-7">
+                        <div class="review__group">
+                            <div class="review">
+                                <div class="review__rating">4</div>
+                                <span class="review__name">Алишер</span>
+                                <p class="review__text">
+                                    <span>Дарил подруге сертификат "роскошное манго". Она у меня любительница разных спа, обертываний и хамамов. После салона сразу позвонила мне, сказала, что понравился</span>
+                                    <span class="review__text-hidden">offal sustainable you probably haven't heard of them twee kogi vice tumeric shoreditch palo santo asymmetrical tacos keytar artisan. Banjo flannel cornhole gluten-free.</span>
+                                    <a href="#" class="review__read-more">Читать далее</a>
+                                </p>
+                                <span class="review__date">12.05.2019</span>
+                            </div>
+                            <div class="review">
+                                <div class="review__rating">4</div>
+                                <span class="review__name">Анна</span>
+                                <p class="review__text">
+                                    <span>Очень понравился подарок от моего молодого человека. Он приобретал у вас сертификат на 30 минутный массаж</span>
+                                </p>
+                                <span class="review__date">12.05.2019</span>
+                            </div>
+                            <div class="review">
+                                <div class="review__rating">2</div>
+                                <span class="review__name">Антон</span>
+                                <p class="review__text">
+                                    <span>Какого фига мне подарили массаж от мужика? Я расчитывал что массаж будет делать красотка, а не волосатый мужик.</span>
+                                </p>
+                                <span class="review__date">12.05.2019</span>
+                            </div>
+                            <button class="button button_outline">Загрузить ещё</button>
+                        </div>
+                    </div>
+                    <div class="reviews__col-5">
+                        <div class="reviews-form">
+                            <div class="reviews-form__wrap">
+                                <form action="">
+                                    <label class="form__input">
+                                        <input type="name" placeholder="Имя">
+                                        <span class="input-error-message">нехватает @</span>
+                                    </label>
+                                    <label class="form__input">
+                                        <input type="email" placeholder="E-mail">
+                                        <span class="input-error-message">нехватает @</span>
+                                    </label>
+                                    <label class="form__textarea">
+                                        <textarea placeholder="Отзыв"></textarea>
+                                        <span class="input-error-message">Недопустимые слова</span>
+                                    </label>
+                                    <div class="rating-group">
+                                        <span class="rating__label">Ваша отметка</span>
+                                        <div class="rating">
+                                            <label>
+                                                <input type="radio" name="rating">
+                                                <span class="rating__stars"></span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="rating">
+                                                <span class="rating__stars"></span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="rating">
+                                                <span class="rating__stars"></span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="rating">
+                                                <span class="rating__stars"></span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="rating">
+                                                <span class="rating__stars"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="button button_default button_input">
+                                        <input type="submit" value="Написать отзыв">
+                                    </div>
+                                </form>
+                                <span class="reviews-form__info">Каждый отзыв проверяется</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <section class="slider slider_recent-company-page">
+            <div class="slider__wrap">
+                <div class="slider__headline">
+                    <h2 class="title">Недавно просмотренные</h2>
+                    <a href="#" class="view-all">Смотреть все</a>
+                </div>
+                <div class="slider__items slick">
+                    <div class="card card_lg">
+                        <a href="#">
+                            <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                            <!-- <div class="card__badge card__badge_new">новинка</div>
+                            <div class="card__badge card__badge_best-seller">хит продаж</div>
+                            <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                            <div class="card__badge card__badge_hot">горячее предложение</div>
+                            <div class="card__cover">
+                                <img class="card__cover-image"src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                            </div>
+                            <div class="card__rating">4.2</div>
+                            <h3 class="card__title">Alfa Education</h3>
+                            <span class="card__category">Повышение квалификации</span>
+                            <p class="card__description"></p>
+                        </a>
+                    </div>
+                    <div class="card card_lg">
+                        <a href="#">
+                            <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                            <!-- <div class="card__badge card__badge_new">новинка</div>
+                            <div class="card__badge card__badge_best-seller">хит продаж</div>
+                            <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                            <div class="card__badge card__badge_hot">горячее предложение</div>
+                            <div class="card__cover">
+                                <img class="card__cover-image"src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                            </div>
+                            <div class="card__rating">4.2</div>
+                            <h3 class="card__title">Alfa Education</h3>
+                            <span class="card__category">Повышение квалификации</span>
+                            <p class="card__description"></p>
+                        </a>
+                    </div>
+                    <div class="card card_lg">
+                        <a href="#">
+                            <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                            <!-- <div class="card__badge card__badge_new">новинка</div>
+                            <div class="card__badge card__badge_best-seller">хит продаж</div>
+                            <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                            <div class="card__badge card__badge_hot">горячее предложение</div>
+                            <div class="card__cover">
+                                <img class="card__cover-image"src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                            </div>
+                            <div class="card__rating">4.2</div>
+                            <h3 class="card__title">Alfa Education</h3>
+                            <span class="card__category">Повышение квалификации</span>
+                            <p class="card__description"></p>
+                        </a>
+                    </div>
+                    <div class="card card_lg">
+                        <a href="#">
+                            <button class="delete-from-favorites" title="Удалить" data-toggle="tooltip"><i class="icon icon_heart"></i></button>
+                            <span class="card__type-name">Реклама</span>
+                            <!-- <div class="card__badge card__badge_new">новинка</div>
+                            <div class="card__badge card__badge_best-seller">хит продаж</div>
+                            <div class="card__badge card__badge_users-choice">выбор покупателей</div>-->
+                            <div class="card__badge card__badge_hot">горячее предложение</div>
+                            <div class="card__cover">
+                                <img class="card__cover-image"src="../images/content/bitmap-copy@2x.jpg" alt="Alfa Education">
+                            </div>
+                            <div class="card__rating">4.2</div>
+                            <h3 class="card__title">Alfa Education</h3>
+                            <span class="card__category">Повышение квалификации</span>
+                            <p class="card__description"></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cta cta_company">
+            <div class="cta__wrap">
+                <div class="cta__left">
+                    <h2 class="cta__title">Хотите стать партнером?</h2>
+                    <p class="cta__subtitle">Наша команда с радостью расскажет вам обо всех преимуществах, которые вы получите, став нашим партнером!</p>
+                </div>
+                <div class="cta__right">
+                    <a class="button button_default">Стать партнером</a>
+                    <p class="cta__instruction">Заполните форму или позвоните нам и наш специалист подробно все расскажет</p>
+                    <span class="cta__phone">998 90 555 22 11</span>
+                </div>
+            </div>
+        </section>
+        
+    </section>
+
+    <footer class="footer">
+        <div class="footer__wrap">
+            <div class="footer__col-3">
+                <a href="#" class="footer__logo"><img src="../images/logo-giver.svg" class="logo-image"></a>
+                <span class="copyright-date">© 2018-2020 Giver</span>
+                <ul class="ligal-links">
+                    <li><a href="#"> Обработка персональных данных</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li><a href="#">Публичная оферта</a></li>
+                </ul>
+            </div>
+            <div class="footer__col-5">
+                <ul class="footer__links">
+                    <li><a href="#">Компания</a></li>
+                    <li><a href="#">Как работает Giver</a></li>
+                    <li><a href="#">Вопросы и ответы</a></li>
+                </ul>
+                <ul class="footer__links">
+                    <li><a href="#">Оплата и возврат</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Партнерам</a></li>
+                </ul>
+            </div>
+            <div class="footer__col-3">
+                <div class="contact-info">
+                    <a href="#" class="button button_outline"><i class="icon icon_phone"></i><span>связаться с нами</span></a>
+                    <span class="contact-info__hotline-title">Горячая линия для пользователей:</span>
+                    <a href="tel:#" class="contact-info__hotline-phone">998 90 555 22 11</a>
+                    <a href="#" class="contact-info__email">info@giver.uz</a>
+                </div>
+            </div>
+            <div class="footer__col-1">
+                <ul class="socials">
+                    <li><a href="#"><i class="icon icon_tw"></i></a></li>
+                    <li><a href="#"><i class="icon icon_fb_boxed"></i></a></li>
+                    <li><a href="#"><i class="icon icon_inst"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-info">Все права защищены. Подарочные сертификаты по всему Узбекистану!</div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="../js/jquery.nice-select.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

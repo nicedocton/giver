@@ -1,0 +1,164 @@
+.company {
+    margin-top: 57px;
+    width: 100%;
+    padding: 10px 0;
+    border-top: solid 1px $very-light-pink;
+    border-bottom: solid 1px $very-light-pink;
+    min-height: 170px;
+    display: inline-block;
+
+    &__wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__group {
+        @extend .row;
+    }
+    
+    &__logo {
+        width: 100%;
+        height: 150px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__col-2,
+    &__col-3,
+    &__col-4 {
+        @extend .default-col-padding;
+        float: left;
+    }
+
+    &__col-2 {
+        @extend .col-lg-2;
+        @extend .col-md-6;
+    }
+
+    &__col-3 {
+        @extend .col-lg-3;
+        @extend .col-md-6;
+    }
+
+    &__col-4 {
+        @extend .col-lg-4;
+        @extend .col-md-6;
+    }
+
+    &__rating {
+        display: inline-block;
+        float: left;
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        margin-right: 20px;
+        text-align: center;
+        font-size: 14px;
+        padding-top: 5px;
+        font-weight: 600;
+        color: $sunflower-yellow;
+        background: $warm-purple;
+        position: relative;
+        margin-top: 50px;
+
+        &:after,
+        &:before {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            bottom: -10px;
+        }
+
+        &:after {
+            border-left: 15px solid $warm-purple;
+            left: 0;
+        }
+
+        &:before {
+            border-right: 15px solid $warm-purple;
+            right: 0;
+        }
+    }
+
+    &__title {
+        margin-top: 42px;
+        margin-bottom: 10px;
+    }
+
+    &__category {
+        font-size: 14px;
+        color: $brown-grey;
+        margin-left: 60px;
+    }
+
+    &__address {
+        max-width: 210px;
+        margin-bottom: 12px;
+    }
+
+    &__on-map-link {
+        font-size: 12px;
+    }
+
+    &__phones {
+        margin-top: 25px;
+        margin-bottom: 30px;
+
+        li {
+            margin-bottom: 11px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                font-size: 16px;
+                color: $black;
+
+                &:hover {
+                    color: $warm-purple;
+                }
+            }
+        }
+    }
+
+    &__email {
+        font-size: 14px;
+        line-height: 1.43;
+    }
+}
+
+@media (max-width: 820px) {
+    .company {
+
+        &__wrap {
+            max-width: 700px;
+        }
+
+        &__col-2,
+        &__col-3,
+        &__col-4 {
+            min-height: 150px;
+        }
+
+    }
+}
+
+@media (max-width: 480px) {
+    .company {
+
+        &__wrap {
+            padding: 0 15px;
+        }
+
+        &__col-2,
+        &__col-3,
+        &__col-4 {
+            padding: 0;
+        }
+
+    }
+}

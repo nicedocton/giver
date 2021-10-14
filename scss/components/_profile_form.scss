@@ -1,0 +1,49 @@
+.profile-form {
+
+    &__wrap {
+        max-width: 280px;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        margin-bottom: 35px;
+    }
+
+    &__group {
+        position: relative;
+    }
+
+    &__edit {
+        top: 0;
+        right: 0;
+        font-size: 12px;
+        position: absolute;
+    }
+}
+
+@media (max-width: 820px) {
+    .profile-form {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 420px) {
+    .profile-form {
+        text-align: center;
+
+        &__edit {
+            position: static;
+        }
+
+        &__group {
+            margin-bottom: 30px;
+        }
+
+        &__wrap {
+            margin: 0 auto;
+        }
+    }
+}

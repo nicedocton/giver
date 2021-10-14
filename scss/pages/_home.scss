@@ -1,0 +1,18 @@
+.slider_with-tabs-home {
+    margin-top: 53px;
+}
+
+.cta_home {
+    margin-top: 83px;
+}
+
+@media (max-width: 420px) {
+
+    .slider_with-tabs-home {
+        margin-top: 23px;
+    }
+
+    .cta_home {
+        margin-top: 0!important;
+    }
+}

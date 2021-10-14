@@ -1,0 +1,57 @@
+.breadcrumbs {
+    margin-top: 48px;
+    @extend .wrapper;
+
+    &__title {
+        display: inline-block;
+        float: left;
+        margin-right: 36px;
+        font-size: 12px;
+        line-height: normal;
+        color: $brown-grey;
+
+    }
+
+    &__list {
+        display: inline-block;
+        float: left;
+
+        li {
+            display: inline-block;
+            float: left;
+            position: relative;
+            font-size: 12px;
+            line-height: normal;
+            margin-right: 20px;
+
+            &:after {
+                position: absolute;
+                content: "/";
+                right: -12px;
+                top: 0;
+            }
+
+            &:last-child {
+
+                &:after {
+                    display: none;
+                }
+            }
+
+            a {
+                color: $black;
+
+                &:hover {
+                    color: $warm-purple;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 820px) {
+    .breadcrumbs {
+        margin-top: 28px;
+        margin-left: 30px;
+    }
+}
